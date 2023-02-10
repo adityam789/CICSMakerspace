@@ -1,0 +1,30 @@
+<body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    
+    <div id="root">
+      <div class="board-settings-form">
+        <form action="/update" method="POST">
+            <label for="Status Matrix Text">Status Text</label><br>
+            <input type="text" id="Status Matrix Text" name="Status Matrix Text" value="Hello World"><br>
+            <label for="status_color">Status Color</label><br>
+            <input type="color" name= "status_color" id="status_color" value="#0000ff"><br>
+            <label for="spmaker_color">SPMaker Color</label><br>
+            <input type="color" name= "spmaker_color" id="spmaker_color" value="#0000ff"><br>
+            <label for="cics_color">CICS Color</label><br>
+            <input type="color" name="cics_color" id="cics_color" value="#0000ff"><br>
+            <label for="Brightness">Brightness</label><br>
+            <input type="range" name="Brightness" id="Brightness" min="0" max="100"><br>
+            <input type="submit" value="Submit">
+      </div>
+    </div>
+    <!--
+        This HTML file is a template.
+        If you open it directly in the browser, you will see an empty page.
+  
+        You can add webfonts, meta tags, or analytics to this file.
+        The build step will place the bundled scripts into the <body> tag.
+  
+        To begin the development, run `npm start` or `yarn start`.
+        To create a production bundle, use `npm run build` or `yarn build`.
+      -->
+  </body>
