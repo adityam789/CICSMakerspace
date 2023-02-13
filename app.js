@@ -1,11 +1,11 @@
-const fetch = require('node-fetch')
+import fetch from 'node-fetch';
 globalThis.fetch = fetch
-const express = require('express');
+import express from 'express';
 const app = express();
 const port = process.env.PORT || 5000;
-const bodyParser = require('body-parser');
+import { urlencoded } from 'body-parser';
 
-app.use(bodyParser.urlencoded({extended:true }));
+app.use(urlencoded({extended:true }));
 
 app.get('/',(req,res)=>{
   res.sendFile('index.html',{'root':'views'})
