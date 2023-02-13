@@ -2,8 +2,10 @@ import fetch from 'node-fetch';
 globalThis.fetch = fetch
 import express from 'express';
 const app = express();
-const port = process.env.PORT || 5000;
-import { urlencoded } from 'body-parser';
+const port = process.env.PORT || 5050;
+// import {urlencoded} from 'body-parser';
+import pkg from 'body-parser';
+const { urlencoded } = pkg;
 
 app.use(urlencoded({extended:true }));
 
