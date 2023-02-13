@@ -11,7 +11,7 @@ app.get('/',(req,res)=>{
 
 
 app.post('/update',async (req,res)=>{
-  let url = `http://192.168.0.108/update?${new URLSearchParams({
+  let url = `http://192.168.0.105/update?${new URLSearchParams({
     CICS_COLOR: req.body.cics_color==='default' 
       ? "#891d1d"
       : req.body.cics_color,
